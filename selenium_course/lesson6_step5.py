@@ -1,5 +1,8 @@
 from selenium import webdriver
+<<<<<<< HEAD
 import time 
+=======
+>>>>>>> b7bfbaafa726c47ce8e4d1db06df6afe5a794b52
 import math
 
 link = "http://suninjuly.github.io/find_link_text"
@@ -7,10 +10,16 @@ link = "http://suninjuly.github.io/find_link_text"
 try:
     browser = webdriver.Chrome()
     browser.get(link)
+<<<<<<< HEAD
 
     link = browser.find_element_by_link_text(str(math.ceil(math.pow(math.pi, math.e)*10000)))
     link.click()
 
+=======
+    link = browser.find_element_by_link_text(str(math.ceil(math.pow(math.pi, math.e)*10000)))
+    link.click()            
+    
+>>>>>>> b7bfbaafa726c47ce8e4d1db06df6afe5a794b52
     input1 = browser.find_element_by_tag_name("input")
     input1.send_keys("Ivan")
     input2 = browser.find_element_by_name("last_name")
@@ -28,4 +37,8 @@ finally:
     # закрываем браузер после всех манипуляций
     browser.quit()
 
+<<<<<<< HEAD
 # не забываем оставить пустую строку в конце файла
+=======
+# не забываем оставить пустую строку в конце файла (test for git)
+>>>>>>> b7bfbaafa726c47ce8e4d1db06df6afe5a794b52
